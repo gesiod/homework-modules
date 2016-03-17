@@ -5,7 +5,7 @@ package com.goit.goitonline.module5ex1;
  */
 public class MinMaxInIntArray {
 
-    public int getMinIntArrayIndex(int[] ia) {
+    public int getMinIntArrayElement(int[] ia) {
         int indexOfMinArray = 0;
         int minIA = ia[0];
 
@@ -15,11 +15,11 @@ public class MinMaxInIntArray {
                 minIA = ia[i];
             }
         }
-        return indexOfMinArray;
+        return minIA;
 
     }
 
-    public int getMaxIntArrayIndex (int[] ia) {
+    public int getMaxIntArrayElement (int[] ia) {
         int indexOfMaxArray = 0;
         int maxIA = ia[0];
 
@@ -29,6 +29,13 @@ public class MinMaxInIntArray {
                 maxIA = ia[i];
             }
         }
-        return indexOfMaxArray;
+        return maxIA;
+    }
+
+    public static void main(String[] args) {
+        MinMaxInIntArray minMaxInIntArray = new MinMaxInIntArray();
+        int[] numbers1 = {5,7,5,23,20,46};
+        System.out.println(minMaxInIntArray.getMaxIntArrayElement(numbers1));
+        System.out.println(minMaxInIntArray.getMinIntArrayElement(numbers1));
     }
 }
