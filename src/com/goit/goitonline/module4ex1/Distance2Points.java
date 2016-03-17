@@ -23,6 +23,7 @@ public class Distance2Points {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        try {
         System.out.println("Введите координаты X первой точки:");
         int firsPointX = sc.nextInt();
         System.out.println("Введите координаты Y первой точки:");
@@ -31,7 +32,12 @@ public class Distance2Points {
         int secendPointX = sc.nextInt();
         System.out.println("Введите координаты Y второй точки:");
         int secendPointY = sc.nextInt();
-        System.out.println("Растояние между точками равно: " + calculateDistance2P(firsPointX, firsPointY, secendPointX, secendPointY));
+
+            System.out.println("Растояние между точками равно: " + calculateDistance2P(firsPointX, firsPointY, secendPointX, secendPointY));
+        } catch (InputMismatchException e) {
+            System.out.println("Введеное значение неверно.");
+        }
+
     }
 }
 
