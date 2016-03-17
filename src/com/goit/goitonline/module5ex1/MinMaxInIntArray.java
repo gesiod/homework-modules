@@ -34,7 +34,7 @@ public class MinMaxInIntArray {
 
     public static void main(String[] args) {
         MinMaxInIntArray minMaxInIntArray = new MinMaxInIntArray();
-        int[] numbers1 = {5,7,5,23,20,46};
+        int[] numbers1 = {-3,7,1,23,220,-46};
         System.out.println(minMaxInIntArray.getMaxIntArrayElement(numbers1));
         System.out.println(minMaxInIntArray.getMinIntArrayElement(numbers1));
     }
