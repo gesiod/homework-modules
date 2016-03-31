@@ -8,12 +8,12 @@ import static java.lang.Math.sqrt;
 public class SimpleShapesSquareCalc {
 
 
-    public int areaSquare(int squareSide)
+    public double areaSquare(double squareSide)
     {
          return squareSide * squareSide;
     }
 
-    public int rectangleSquare(int rectangleSideFirst, int rectangleSideSecond)
+    public double rectangleSquare(double rectangleSideFirst, double rectangleSideSecond)
     {
         return rectangleSideFirst*rectangleSideSecond;
     }

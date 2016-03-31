@@ -9,11 +9,7 @@ import java.util.List;
  */
 public class BubleSorter {
 
-
-
     public List<Integer> sort (List<Integer> integers) {
-        //List<Integer> returnIntegers = new ArrayList<Integer>();
-        //returnIntegers = integers;
         if(integers.size() <= 1) return integers;
         for(int i =0; i < integers.size(); i++) {
             if (i != integers.size()-1) {

@@ -3,9 +3,12 @@ package com.goit.goitonline.module5ex1;
 /**
  * Created by Grigoriy on 14.03.2016.
  */
-public class MinMaxInIntArray {
 
+// Переименовать класс  MinMaxInIntArray в GetMinOrMaxElementsInIntegerArray
+public class MinMaxInIntArray {
+    // Переименовать метод в getMinElementsInIntegerArray
     public int getMinIntArrayElement(int[] ia) {
+        //удалить переменную indexOfMinArray, которая была нужна, когда предпологалось, что метод будет возражать не элемент, а индекс
         int indexOfMinArray = 0;
         int minIA = ia[0];
 
@@ -18,8 +21,9 @@ public class MinMaxInIntArray {
         return minIA;
 
     }
-
+    // Переименовать метод в getMaxElementsInIntegerArray
     public int getMaxIntArrayElement (int[] ia) {
+        //удалить переменную indexOfMinArray, которая была нужна, когда предпологалось, что метод будет возражать не элемент, а индекс
         int indexOfMaxArray = 0;
         int maxIA = ia[0];
 

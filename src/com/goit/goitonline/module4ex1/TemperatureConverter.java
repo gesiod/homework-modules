@@ -5,6 +5,7 @@ package com.goit.goitonline.module4ex1;
  */
 public  class TemperatureConverter {
 
+    //Заменить числа 1.8 и 32 на константы
     public double ConverterCelsiusToFahrenheit (double celsius) {
         return celsius * 1.8 + 32;
     }

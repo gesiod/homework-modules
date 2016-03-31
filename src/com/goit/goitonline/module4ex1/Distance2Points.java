@@ -14,13 +14,14 @@ public class Distance2Points {
         return sqrt (Math.pow(secondPoint.getX() - firstPoint.getX(), 2) + Math.pow(secondPoint.getY() - firstPoint.getY(), 2));
     }
 
-    public static double calculateDistance2P (double firstPointX, double firstPointY, double secondPointX, double secondPointY) {
+    public double calculateDistance2P (double firstPointX, double firstPointY, double secondPointX, double secondPointY) {
 
             return sqrt(Math.pow(secondPointX - firstPointX, 2) + Math.pow(secondPointY - firstPointY, 2));
 
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
+
 
         Scanner sc = new Scanner(System.in);
         try {
