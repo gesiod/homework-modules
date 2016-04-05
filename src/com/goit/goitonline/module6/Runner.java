@@ -8,6 +8,11 @@ import java.util.*;
  * Created by Grigoriy on 23.03.2016.
  */
 public class Runner {
+
+    private static final String MUSICAL_INSTRUMENT_GUITARS = "Guitars";
+    private static final String  MUSICAL_INSTRUMENT_TRUMPETS = "Trumpets";
+    private static final String MUSICAL_INSTRUMENT_PIANOS = "Pianos";
+
     public static void main(String[] args) {
         MusicStore musicStore = new MusicStore();
         ArrayList<Guitar> guitars = new ArrayList<>();
@@ -31,8 +36,8 @@ public class Runner {
         System.out.println(musicStore);
 
         Map<String, Integer> order = new HashMap<>();
-        order.put("Guitars", 7); //заменить на константу MUSICAL_INSTRUMENT_GUITARS
-        order.put("Trumpets", 2); //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
+        order.put(MUSICAL_INSTRUMENT_GUITARS, 7); //заменить на константу MUSICAL_INSTRUMENT_GUITARS
+        order.put(MUSICAL_INSTRUMENT_TRUMPETS, 2); //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
 
         List<MusicalInstrument> orderResult = prepareOrder(musicStore, order);
         System.out.print("Order: " + orderResult);
@@ -40,15 +45,15 @@ public class Runner {
         System.out.println(musicStore);
 
         Map<String, Integer> order2 = new HashMap<>();
-        order2.put("Pianos", 1); //заменить на константу MUSICAL_INSTRUMENT_PIANOS
+        order2.put(MUSICAL_INSTRUMENT_PIANOS, 1); //заменить на константу MUSICAL_INSTRUMENT_PIANOS
         orderResult = prepareOrder(musicStore,order2);
         System.out.print("Order: " + orderResult);
         System.out.println(musicStore);
 
         Map<String,Integer> order3 = new HashMap<>();
-        order3.put("Pianos", 1); //заменить на константу MUSICAL_INSTRUMENT_PIANOS
-        order3.put("Guitars", 8); //заменить на константу MUSICAL_INSTRUMENT_GUITARS
-        order3.put("Trumpets", 6); //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
+        order3.put(MUSICAL_INSTRUMENT_PIANOS, 1); //заменить на константу MUSICAL_INSTRUMENT_PIANOS
+        order3.put(MUSICAL_INSTRUMENT_GUITARS, 8); //заменить на константу MUSICAL_INSTRUMENT_GUITARS
+        order3.put(MUSICAL_INSTRUMENT_TRUMPETS, 6); //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
         orderResult = prepareOrder(musicStore, order3);
         System.out.print("Order: " + orderResult);
         System.out.println(musicStore);
@@ -65,9 +70,9 @@ public class Runner {
 
         for(Map.Entry<String, Integer> orderEntry : order.entrySet()) {
             switch (orderEntry.getKey()) {
-                case "Guitars": //заменить на константу MUSICAL_INSTRUMENT_GUITARS
+                case MUSICAL_INSTRUMENT_GUITARS: //заменить на константу MUSICAL_INSTRUMENT_GUITARS
                     List<Guitar> guitars = shop.getGuitars();
-                    int numberOfGuitarsToRemove = order.get("Guitars"); //заменить на константу MUSICAL_INSTRUMENT_GUITARS
+                    int numberOfGuitarsToRemove = order.get(MUSICAL_INSTRUMENT_GUITARS); //заменить на константу MUSICAL_INSTRUMENT_GUITARS
                     if (shop.getGuitars().size() < numberOfGuitarsToRemove) throw new IllegalStateException("Shop does not have enough Guitars");
 
                     if (numberOfGuitarsToRemove > 0) {
@@ -77,9 +82,9 @@ public class Runner {
                         result.addAll(guitarsToRemove);
                     }
                     break;
-                case "Pianos" : //заменить на константу MUSICAL_INSTRUMENT_PIANOS
+                case MUSICAL_INSTRUMENT_PIANOS : //заменить на константу MUSICAL_INSTRUMENT_PIANOS
                     List<Piano> pianos = shop.getPianos();
-                    int numberOfPianosToRemove = order.get("Pianos"); //заменить на константу MUSICAL_INSTRUMENT_PIANOS
+                    int numberOfPianosToRemove = order.get(MUSICAL_INSTRUMENT_PIANOS); //заменить на константу MUSICAL_INSTRUMENT_PIANOS
                     if (shop.getPianos().size() < numberOfPianosToRemove) throw new IllegalArgumentException("Shop does not have enough Pianos");
 
                     if (numberOfPianosToRemove > 0) {
@@ -89,9 +94,9 @@ public class Runner {
                         result.addAll(pianosToRemove);
                     }
                     break;
-                case "Trumpets" : //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
+                case MUSICAL_INSTRUMENT_TRUMPETS : //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
                     List<Trumpet> trumplets = shop.getTrumpets();
-                    int numberOfTrumpletsToRemove = order.get("Trumpets"); //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
+                    int numberOfTrumpletsToRemove = order.get(MUSICAL_INSTRUMENT_TRUMPETS); //заменить на константу MUSICAL_INSTRUMENT_TRUMPETS
                     if (shop.getTrumpets().size() < numberOfTrumpletsToRemove) throw new IllegalArgumentException("Shop does not have enough Trumpets");
 
                     if (numberOfTrumpletsToRemove > 0) {
