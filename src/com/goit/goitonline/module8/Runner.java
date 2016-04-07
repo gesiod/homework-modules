@@ -31,7 +31,8 @@ public class Runner {
 
         //System.out.print(animalsList);
 
-        Collections.sort(animalsList);
+        //Collections.sort(animalsList);
+        animalsList.sort(Animals::compareTo);
 
 
         System.out.print("\n\n" + header);

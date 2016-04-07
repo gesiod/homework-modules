@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed7105c7-58a3-4c93-9055-1ccdc6f5a74a" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/goit/goitonline/module8/DogsComparator.java" afterPath="$PROJECT_DIR$/src/com/goit/goitonline/module8/AnimalsComparator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/goitonline/module8/Animals.java" afterPath="$PROJECT_DIR$/src/com/goit/goitonline/module8/Animals.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/goitonline/module8/Runner.java" afterPath="$PROJECT_DIR$/src/com/goit/goitonline/module8/Runner.java" />
     </list>
     <ignored path="homework-module3.iws" />
@@ -75,8 +75,8 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,14 +94,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DogsComparator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/DogsComparator.java">
+      <file leaf-file-name="AnimalsComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/AnimalsComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,8 +188,9 @@
         <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/DogsComparator.java" />
         <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/Cat.java" />
         <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/Dog.java" />
-        <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/Runner.java" />
         <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/Animals.java" />
+        <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/AnimalsComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/goit/goitonline/module8/Runner.java" />
       </list>
     </option>
   </component>
@@ -458,7 +459,7 @@
       <recent name="C:\Users\Grigoriy\OneDrive\homework-modules\src\com\goit\goitonline\module6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Runner (1)">
+  <component name="RunManager" selected="Application.Runner">
     <configuration default="false" name="MinMaxInIntArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -539,7 +540,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.goit.goitonline.module8.*" />
@@ -965,11 +966,11 @@
       <item index="1" class="java.lang.String" itemvalue="Application.BubleSorter" />
       <item index="2" class="java.lang.String" itemvalue="Application.Distance2Points" />
       <item index="3" class="java.lang.String" itemvalue="Application.Runner" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Runner (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Runner" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Runner (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
         <item index="1" class="java.lang.String" itemvalue="Application.Runner" />
         <item index="2" class="java.lang.String" itemvalue="Application.Distance2Points" />
         <item index="3" class="java.lang.String" itemvalue="Application.MinMaxInIntArray" />
@@ -1024,7 +1025,7 @@
       <workItem from="1459794231205" duration="7391000" />
       <workItem from="1459960444566" duration="1397000" />
       <workItem from="1460034791453" duration="716000" />
-      <workItem from="1460048419363" duration="5873000" />
+      <workItem from="1460048419363" duration="6605000" />
     </task>
     <task id="LOCAL-00001" summary="Add New Metod">
       <created>1458067161195</created>
@@ -1131,11 +1132,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460055451703</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add Homework 7 and 8">
+      <created>1460056304144</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1460056304144</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84786000" />
+    <option name="totallyTimeSpent" value="85518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1149,7 +1157,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31984335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31984335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1697,17 +1705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/DogsComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1745,10 +1742,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/AnimalsComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/goitonline/module8/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
