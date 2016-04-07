@@ -57,12 +57,6 @@ public class Runner {
         orderResult = prepareOrder(musicStore, order3);
         System.out.print("Order: " + orderResult);
         System.out.println(musicStore);
-
-
-
-
-
-
     }
 
     private static List<MusicalInstrument> prepareOrder(MusicStore shop, Map<String, Integer> order) {

@@ -3,7 +3,7 @@ package com.goit.goitonline.module8;
 /**
  * Created by Grigoriy on 02.04.2016.
  */
-public class Dog implements  Comparable<Dog>{
+public class Dog implements Comparable<Dog>{
     private String name;
     private int age;
 
