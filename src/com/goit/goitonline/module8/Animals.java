@@ -16,7 +16,7 @@ public class Animals implements Comparable<Animals> {
 
     @Override
     public String toString() {
-        String s = String.format ("%-10s | %-2d | %-6s\n", name, age, makeSound);
+        String s = String.format ("%-10s | %-4d | %-6s\n", name, age, makeSound);
         return s;
 
     }

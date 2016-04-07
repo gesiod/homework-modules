@@ -21,11 +21,24 @@ public class Runner {
         animalsList.add(new Dog("Bill", 8));
         animalsList.add(new Dog("Dog", 1));
 
-        System.out.println(animalsList);
+        String header = String.format ("%-10s | %-4s | %-6s\n", "Name", "Age", "Make sound");
+        System.out.print(header);
+        for (int i = 0; i < animalsList.size(); i++) {
+            System.out.print(animalsList.get(i));
+        }
+
+
+
+        //System.out.print(animalsList);
 
         Collections.sort(animalsList);
 
-        System.out.println(animalsList.toString());
+
+        System.out.print("\n\n" + header);
+        for (int i = 0; i < animalsList.size(); i++) {
+            System.out.print(animalsList.get(i));
+        }
+        //System.out.println(animalsList.toString());
 
 
 
