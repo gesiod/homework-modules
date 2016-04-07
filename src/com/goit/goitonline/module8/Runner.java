@@ -10,17 +10,22 @@ import java.util.List;
  */
 public class Runner {
     public static void main(String[] args) {
-        List<Dog> dogs = new ArrayList<>();
-        dogs.add(new Dog("Pit", 5));
-        dogs.add(new Dog("Bull", 3));
-        dogs.add(new Dog("Bill", 8));
-        dogs.add(new Dog("Dog", 1));
+        List<Animals> animalsList = new ArrayList<>();
+        animalsList.add(new Dog("Pit", 5));
+        animalsList.add(new Cat("Tom", 1));
+        animalsList.add(new Dog("Bull", 3));
+        animalsList.add(new Cat("Kuzya", 5));
+        animalsList.add(new Cat("Nina", 7));
+        animalsList.add(new Cat("Liza", 1));
+        animalsList.add(new Dog("Pit", 5));
+        animalsList.add(new Dog("Bill", 8));
+        animalsList.add(new Dog("Dog", 1));
 
-        System.out.println(dogs);
+        System.out.println(animalsList);
 
-        Collections.sort(dogs);
+        Collections.sort(animalsList);
 
-        System.out.println(dogs);
+        System.out.println(animalsList.toString());
 
 
 
