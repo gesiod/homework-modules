@@ -6,29 +6,38 @@ import java.util.List;
 /**
  * Created by Grigoriy on 10.04.2016.
  */
-public class CesarEcrypt {
+public class CesarСrypt {
 
 
-    List<Character> alphabetEng = new ArrayList<Character>();
-    List<Character> alphabetRus = new ArrayList<Character>();
-    List<Character> alphabetUkr = new ArrayList<Character>();
+    List<Character> alphabet = new ArrayList<Character>();
+
     private final static char[] PUNCTUATION = {'.', ',', ';', ':', '!', '?', '-'};
-    CesarEcrypt(String) {
+    private final static char[] UKRAINIAN = {'І',  'і', 'Є','є', 'Ї', 'ї', '`'};
+    CesarСrypt(String) {
         for (char c = 'А'; c <= 'Я'; c++) {
-            alphabetRus.add(c);
+            alphabet.add(c);
         }
         for (char c = 'а'; c <= 'я'; c++) {
-            alphabetRus.add(c);
+            alphabet.add(c);
+        }
+        for (char c = 'A'; c <= 'Z'; c++) {
+            alphabet.add(c);
+        }
+        for (char c = 'a'; c <= 'z'; c++) {
+            alphabet.add(c);
         }
         for (char c = '0'; c <= '9'; c++) {
-            alphabetRus.add(c);
+            alphabet.add(c);
         }
         for (char c : PUNCTUATION) {
-            alphabetRus.add(c);
+            alphabet.add(c);
+        }
+        for (char c : UKRAINIAN) {
+            alphabet.add(c);
         }
     }
 
-    String encrypt(List<Character> alphabet, String text, int m, int k) {
+    public String encrypt(String text, int m, int k) {
         int n = alphabet.size();
         m = m % n;
         k = k % n;
@@ -56,7 +65,6 @@ public class CesarEcrypt {
             }
         }
         StringBuilder newText = new StringBuilder();
-        //блок дешифрования данных
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
             int index = alphabet.indexOf(c);
