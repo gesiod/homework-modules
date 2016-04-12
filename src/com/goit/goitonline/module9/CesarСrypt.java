@@ -13,7 +13,7 @@ public class CesarСrypt {
 
     private final static char[] PUNCTUATION = {'.', ',', ';', ':', '!', '?', '-'};
     private final static char[] UKRAINIAN = {'І',  'і', 'Є','є', 'Ї', 'ї', '`'};
-    CesarСrypt(String) {
+    CesarСrypt() {
         for (char c = 'А'; c <= 'Я'; c++) {
             alphabet.add(c);
         }
@@ -53,7 +53,7 @@ public class CesarСrypt {
         }
         return cryptogram.toString();
     }
-    public String decrypt(List<Character> alphabet, String text, int m, int k){
+    public String decrypt(String text, int m, int k){
         int n = alphabet.size();
         m = m % n;
         k = k % n;
