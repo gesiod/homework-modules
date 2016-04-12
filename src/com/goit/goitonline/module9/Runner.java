@@ -21,16 +21,16 @@ public class Runner {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the number of shifting, <= 44");
+        System.out.println("Enter the number of shifting, <= 33");
 
         String inputedShiftOfLetter = scanner.nextLine();
-        System.out.println("Enter the other number of shifting, <= 44");
+        System.out.println("Enter the other number of shifting, <= 33");
 
         String inputedShiftOfLetterX = scanner.nextLine();
         int shiftOfLetter = Integer.parseInt(inputedShiftOfLetter);
         int shiftOfLetterX = Integer.parseInt(inputedShiftOfLetterX);
 
-        if (shiftOfLetter <= 26 && shiftOfLetter > 0) {
+        if (shiftOfLetter <= 34 && shiftOfLetter > 0) {
             System.out.println();
             System.out.println("Files in the directory: ");
             System.out.println(directory.toString());
@@ -38,21 +38,16 @@ public class Runner {
 
             for (String d : directory){
                 System.out.println(d);
+                System.out.println("Encrypted text:");
+                String encrypted = cesarСrypt.encrypt(d, shiftOfLetter, shiftOfLetterX);
+                System.out.println(encrypted);
+                System.out.println("Decrypted text:");
+                String decrypted = cesarСrypt.decrypt(encrypted, shiftOfLetter, shiftOfLetterX);
+                System.out.println(decrypted + "\n");
             }
-            System.out.println();
-            System.out.println("Encrypted text:");
-            System.out.println();
-            String encryptedBuilder = cesarСrypt.encrypt(directory.toString(), shiftOfLetter, shiftOfLetterX);
-            System.out.println(encryptedBuilder);
-
-            System.out.println();
-            System.out.println("Decrypted text:");
-            System.out.println();
-            String decryptedBuilder = cesarСrypt.decrypt(encryptedBuilder, shiftOfLetter, shiftOfLetterX);
-            System.out.println(decryptedBuilder);
 
         } else{
-            System.out.println("Error: number should be less than 25 and more than 0!");
+            System.out.println("Error: number should be less than 33 and more than 0!");
         }
     }
 
