@@ -1,6 +1,7 @@
 package com.goit.goitonline.module9;
 
 import junit.framework.TestCase;
+import org.junit.Test;
 
 import java.util.ArrayList;
 
@@ -8,6 +9,7 @@ import java.util.ArrayList;
  * Created by GRSV on 20.04.2016.
  */
 public class CesarСryptTest extends TestCase {
+    @Test
     public void testEncrypt() throws Exception {
         int m = 3;
         int k = 21;
@@ -30,6 +32,7 @@ public class CesarСryptTest extends TestCase {
 
     }
 
+    @Test
     public void testDecrypt() throws Exception {
         int m = 3;
         int k = 21;

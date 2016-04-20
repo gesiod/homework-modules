@@ -39,7 +39,7 @@ public class FileCesarCrypt {
         DataInputStream in = null;
         String textFromFile = null;
         try {
-            in = new DataInputStream(new BufferedInputStream(new FileInputStream("outFile")));
+            in = new DataInputStream(new BufferedInputStream(new FileInputStream(outFile)));
             textFromFile = in.readUTF();
             return textFromFile;
         } catch (IOException e) {
