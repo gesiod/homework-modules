@@ -11,7 +11,7 @@ public class CesarСrypt {
 
     List<Character> alphabet = new ArrayList<Character>();
 
-    private final static char[] PUNCTUATION = {'.', ',', ';', ':', '!', '?', '-'};
+    private final static char[] PUNCTUATION = {'.', ',', ';', ':', '!', '?', '-', ' '};
     private final static char[] UKRAINIAN = {'І',  'і', 'Є','є', 'Ї', 'ї'};
     CesarСrypt() {
         for (char c = 'А'; c <= 'Я'; c++) {

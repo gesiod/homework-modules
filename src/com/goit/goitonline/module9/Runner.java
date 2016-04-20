@@ -11,7 +11,6 @@ public class Runner {
         ArrayList<String> directory = new ArrayList<>();
         CesarСrypt cesarСrypt = new CesarСrypt();
 
-
         directory.add("Stairway to heaven");
         directory.add("Smoke on the water");
         directory.add("Nothing else matters");
