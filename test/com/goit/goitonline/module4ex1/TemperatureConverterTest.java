@@ -7,10 +7,21 @@ import junit.framework.TestCase;
  */
 public class TemperatureConverterTest extends TestCase {
     public void testConverterCelsiusToFahrenheit() throws Exception {
+        TemperatureConverter converter = new TemperatureConverter();
+        double celsius = 36.6;
+        double result = 97.88000000000001;
+
+        assertEquals(result, converter.ConverterCelsiusToFahrenheit(celsius));
 
     }
 
     public void testConverterFahrenheitToCelsius() throws Exception {
+
+        TemperatureConverter converter = new TemperatureConverter();
+        double fahrenheit = 97.88000000000001;
+        double result = 36.6;
+
+        assertEquals(result, converter.ConverterFahrenheitToCelsius(fahrenheit));
 
     }
 
