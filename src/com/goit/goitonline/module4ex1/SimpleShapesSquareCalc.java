@@ -25,16 +25,11 @@ public class SimpleShapesSquareCalc {
     }
 
     public double triangleSquare(double baseTriangleSide, double heightTriangle){
-        return (baseTriangleSide + heightTriangle) / 2;
+        return (baseTriangleSide * heightTriangle) / 2;
     }
 
     public double circleSquare (double radiusCircle) {
         return Math.PI * radiusCircle * radiusCircle;
     }
-
-    /*public double circleSquare (double diameterCircle) {
-        return (Math.PI * diameterCircle * diameterCircle) / 4;
-    }*/
-
 
 }
